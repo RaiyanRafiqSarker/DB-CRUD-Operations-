@@ -6,7 +6,7 @@
 
   <body>
 
-     <form align="center" action="../Controller/AddProductController.php" method="post">
+     <form  action="../Controller/AddProductController.php" method="post">
         <fieldset>
             <legend style="color: red;">Add Product</legend>
         <table>
