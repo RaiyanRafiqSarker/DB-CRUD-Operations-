@@ -29,3 +29,10 @@ function updateProduct($id, $name, $buying, $selling, $display)
 
     return mysqli_query($conn, $sql);
 }
+
+function deleteProduct($id)
+{
+    $conn = getConnection();
+    $sql = "DELETE FROM products WHERE id = $id";
+    return mysqli_query($conn, $sql);
+}
