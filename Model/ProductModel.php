@@ -36,3 +36,12 @@ function deleteProduct($id)
     $sql = "DELETE FROM products WHERE id = $id";
     return mysqli_query($conn, $sql);
 }
+
+function searchProducts($key)
+{
+    $conn = getConnection();
+    $sql = "SELECT * FROM products 
+            WHERE name LIKE '%$key%' 
+            AND display = 'Yes'";
+    return mysqli_query($conn, $sql);
+}
