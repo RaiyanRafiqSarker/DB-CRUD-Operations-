@@ -10,7 +10,7 @@ require_once('../Controller/DisplayController.php');
 </head>
 <body>
 
-<form align="center">
+<form>
 <fieldset>
     <legend style="color:red;">DISPLAY</legend>
 
